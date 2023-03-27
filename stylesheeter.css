@@ -1,0 +1,68 @@
+p, u {
+    font-size: xx-large ;
+    color:aliceblue;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+dt, dl, dd{
+    color:aliceblue;
+    font-size: x-large;
+    text-align: center;
+}
+
+mark {
+    color:black;
+}
+
+.div1, .div2, .div3, .div4, .div5{
+    text-align:left;
+    color:aliceblue;
+    font-size: x-large;
+}
+
+
+section{
+    text-align: center;
+    color:aliceblue;
+    font-size:large;
+}
+
+.div7{
+    text-align: center;
+    color: aliceblue;
+    font-size: large;
+    
+    
+}
+
+.div10, .div11, .div12, .div13, .div14{
+    text-align:right;
+    color:aliceblue;
+    font-size: large;;
+}
+
+.div20{
+    text-align: center 0px;
+    position: absolute;
+    bottom: 0px;
+    color:aliceblue;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3850px;
+    height: 150px;
+  }
+  
+  #nevek:hover{
+    color: aqua;
+  }

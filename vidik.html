@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>League of Legends</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ikon.ico">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+
+    <!-- menü -->
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="nav-main">
+        <div class="nav-header">
+          <img src="img/ikon.ico" alt="logo">
+  
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="index.html">Főoldal</a>
+          </li>
+  
+          <li>
+            <a href="hosok.html">Hősök</a>
+  
+          </li>
+
+          <li>
+            <a href="#">Előzetes</a>
+          
+          </li>
+  
+          <li>
+            <a href="kapcsolat.html">Kapcsolat</a>
+  
+          </li>
+  
+          <li>
+            <a href="rendszerkov.html">Rendszerkövetelmények</a>
+          </li>
+
+
+          <li id="szin">
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+          </li>
+  
+        </ul>
+      </div>
+    </nav>
+<br>
+<br>
+<br>
+<br>
+    <h5><span class="magic">
+        <span class="magic-star">
+          <svg viewBox="0 0 512 512">
+          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+          </svg>
+        </span>
+        <span class="magic-star">
+          <svg viewBox="0 0 512 512">
+          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+          </svg>
+        </span>
+        <span class="magic-star">
+          <svg viewBox="0 0 512 512">
+          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+          </svg>
+        </span>
+        <span class="magic-text" style="font-size:55px;">Előzetes</span>
+        <hr class="divider" />
+      </span></h5>
+
+      <br>
+      <br>  
+
+      <video class="minividi" width="300" height="auto" autoplay muted draggable="false" loop controls>
+        <source src="img/trailer.mp4" type="video/mp4">
+        
+      </video>
+
+
+
+
+
+<!-- anmiáció script -->
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+
+  <!-- Jobb Klikk Kikapcsolása -->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>League of Legends</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ikon.ico">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+
+    <!-- menü -->
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="nav-main">
+        <div class="nav-header">
+          <img src="img/ikon.ico" alt="logo">
+  
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#">Főoldal</a>
+          </li>
+  
+          <li>
+            <a href="hosok.html">Hősök</a>
+  
+          </li>
+
+          <li>
+            <a href="vidik.html">Előzetes</a>
+          
+          </li>
+  
+          <li>
+            <a href="kapcsolat.html">Kapcsolat</a>
+  
+          </li>
+  
+          <li>
+            <a href="rendszerkov.html">Rendszerkövetelmények</a>
+          </li>
+
+
+          <li id="szin">
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+          </li>
+  
+        </ul>
+      </div>
+    </nav>
+
+
+      <!-- főoldal -->
+      <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                  <h1 style="font-size: 100px;"><span class="magic" id="about">
+                    <span class="magic-star">
+                      <svg viewBox="0 0 512 512">
+                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                      </svg>
+                    </span>
+                    <span class="magic-star">
+                      <svg viewBox="0 0 512 512">
+                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                      </svg>
+                    </span>
+                    <span class="magic-star">
+                      <svg viewBox="0 0 512 512">
+                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                      </svg>
+                    </span>
+                    <span class="magic-text">League Of Legends</span>
+                  </span></h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5"></p>
+                    <a class="btn btn-primary btn-xl" id="hosgomb" href="#about">Mindent a League Of Legends-ről!</a><br><br>
+                    <a class="btn btn-primary btn-xl" href="#Nexus" id="hosgomb">Mindent a Nexus-ról!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    
+                    <h5><span class="magic" id="about">
+                      <span class="magic-star">
+                        <svg viewBox="0 0 512 512">
+                        <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                        </svg>
+                      </span>
+                      <span class="magic-star">
+                        <svg viewBox="0 0 512 512">
+                        <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                        </svg>
+                      </span>
+                      <span class="magic-star">
+                        <svg viewBox="0 0 512 512">
+                        <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                        </svg>
+                      </span>
+                      <span class="magic-text">Mi az a League Of Legends?</span>
+                    </span></h5>
+
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                  <p class="text-white-75 mb-5">A League of Legends egy csapatközpontú stratégiai játék, ahol nagy erejű hősök két ötfős csapata próbálja lerombolni egymás bázisát. 140 hősből válogatva indíthatsz látványos akciókat, győzhetsz le ellenfeleket és pusztíthatsz el tornyokat a győzelem felé vezető úton.<br></b>
+
+                    
+                      <h5><span class="magic">
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-text">Ajánló Videó:</span>
+                        <hr class="divider" />
+                      </span></h5>
+
+                      <div class="reveal"><video width="700" height="auto" autoplay muted draggable="false" loop>
+                      <source src="img/video.mp4" type="video/mp4"></video></div>
+
+                      
+
+                      <!-- cím -->
+                      <h5><span class="magic">
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-text">Dzsungel</span>
+                      </span></h5>
+
+                      <hr class="divider" />
+
+                      <div class="reveal"><p>A dzsungelharcosok élnek-halnak a vadászatért. Az ösvények között suhanva szemmel tartják a fontosabb semleges szörnyeket, és lecsapnak az óvatlan ellenséges hősökre.</p>
+                      <p>Baron Nashor a dzsungel legerősebb szörnye. 
+                      <p>Baron legyőzésekor a csapat bónusz sebzést és varázserőt, valamint felerősített Hazateleportálást kap, ezenkívül jelentősen megnő a közeli minionok ereje.</p>
+                      <p>Az ösvények között fekvő terület a dzsungel, ahol semleges szörnyek és dzsungelnövények várják a játékost. 
+                        A két legfontosabb szörny Baron Nashor és a különböző sárkányok. Ezeket legyőzve egyedi erősítő hatásokhoz juthat a csapat, és akár meg is fordíthatja a meccs állását.</p></div>
+
+                        <!-- cím -->
+                        <h5><span class="magic">
+                          <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                          </span>
+                          <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                          </span>
+                          <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                          </span>
+                          <span class="magic-text">Sárkányok</span>
+                        </span></h5>
+                        
+                        <hr class="divider" />
+
+                        <div class="reveal"><p>A sárkányok nagy erejű szörnyek, amelyek a hozzájuk tartozó elemtől függő bónuszt adnak az őket legyőző csapatnak. Ötféle elemi sárkány létezik és egy Ősi sárkány.</p></div>
+
+                         <!-- cím -->
+                        <h5><span class="magic">
+                          <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                          </span>
+                          <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                          </span>
+                          <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                          </span>
+                          <span class="magic-text">Karakterek (Hősők) Fejlődése</span>
+                        </span></h5>
+
+                        <hr class="divider" />
+
+                        <div class="reveal"><p>A hősök két módon növelhetik erejüket: tapasztalati pontok gyűjtésével és szintlépéssel, illetve arany gyűjtésével, amivel erősebb tárgyakat vásárolhatnak. 
+                          Mindkettőt hatékonyan kell gyűjteni ahhoz, hogy végül legyűrhesd az ellenfelet, és lerombolhasd a bázisukat.</p></div>
+
+                           <!-- cím -->
+                          <h5><span class="magic">
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-text">Old fel a képességeiket!</span>
+                          </span></h5>
+
+                          <hr class="divider" />
+
+                          <div class="reveal"><p>A hősöknek öt saját képességük van, két különleges varázslatuk, és egyszerre legfeljebb hét tárgyuk. 
+                            A képességek ideális sorrendben történő fejlesztésével, valamint a megfelelő idézői varázslatok és tárgyösszeállítások kiválasztásával sokat tehetsz a csapatod győzelméért.
+                            A legtöbb hősnek öt egyedi képessége van: egy passzív, három alap és egy végső. Ezeket a képességeket a Q, W, E és R billentyűkkel lehet aktiválni.
+                            Az idézői varázslatok a hősök által használható, egyedi hatásokkal bíró képességek. A D és az F billentyűkhöz vannak társítva. 
+                            Számos varázslat van, de a leggyakrabban használtak az Átvillanás, a Teleport, a Sújtás és az Égetés.
+                            A tárgyak valamilyen módon erősítik a hőst, például megnövelik a mozgási sebességét, a sebzését, vagy csökkentik a képességei töltési idejét. 
+                            Ellentétben azzal, ahogy a talizmánok birtokába juthatsz, ezeket aranyért tudod megvásárolni.</p></div>
+
+                             <!-- cím -->
+                            <h5><span class="magic">
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-text">Tapasztalati pont</span>
+                            </span></h5>
+                            <hr class="divider" />
+
+                            <div class="reveal"><p>Bizonyos mennyiségű tapasztalati pontot összegyűjtve a hősök szintet lépnek, új képességeket oldanak fel, vagy meglévőket fejlesztenek, és növelik az alapértékeiket. Tapasztalati pontokat ellenséges egységek és hősök megölésével, gyilkosságokban való részvétellel és ellenséges védelmi építmények lerombolásával lehet szerezni.</p></div>
+
+                            <!-- cím -->
+                            <h5><span class="magic">
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-text">Felső Ösvény</span>
+                            </span></h5>
+
+                            <hr class="divider" />
+
+                            <div class="reveal"><p>A felső ösvényesek szívós egyéni harcosok. Védelmezniük kell az ösvényüket, és kordában kell tartaniuk az ellenfél legerősebb tagjait.</p></div>
+
+                            <!-- cím -->
+                            <h5><span class="magic">
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-text">Tornyok - inhibitorok</span>
+                            </span></h5>
+
+                            <hr class="divider" />
+
+                            <div class="reveal"><p>Mindegyik inhibitort egy torony őrzi. Az inhibitorok elpusztítása után percekig szuperminionok fognak megjelenni az ösvényen. Ezután az inhibitor újjáépül, és nem érkeznek újabb szuperminionok.</p>
+                            <p>A tornyok sebzést okoznak az ellenséges minionoknak és hősöknek, és a háború ködén keresztül limitált látóteret biztosít a csapat számára. Ezeket az építményeket minionokkal az oldaladon érdemes megtámadni, hogy elkerüld a támadásaikat.</p></div>
+
+                            <!-- cím -->
+                            <h5><span class="magic">
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-star">
+                                <svg viewBox="0 0 512 512">
+                                <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                </svg>
+                              </span>
+                              <span class="magic-text">Tisztítsd meg az utat</span>
+                            </span></h5>
+                            
+                            <hr class="divider" />
+                            
+                            <div class="reveal"><p>A csapatodnak legalább egy ösvényen át kell törnie, hogy elérje az ellenséges nexust. Ehhez le kell rombolni a tornyokból és az inhibitorokból álló védelmi vonalat. Mindegyik ösvényen három torony van és egy inhibitor, és a nexusokat két-két torony őrzi.</p></div>
+                            
+                            <!-- cím -->
+                            
+                      <h5><span class="magic">
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <span class="magic-star">
+                          <svg viewBox="0 0 512 512">
+                          <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                          </svg>
+                        </span>
+                        <p id="Nexus"></p>
+                        <span class="magic-text" >Rombold le a bázist</span>
+                      </span></h5>
+
+
+                      <hr class="divider" />
+                    
+                      <div class="reveal">A nexus mindkét csapat bázisának a szíve. Az ellenséges nexust lerombolva nyerheted meg a játékot.</p></div>
+
+                        <h5><span class="magic">
+    <span class="magic-star">
+      <svg viewBox="0 0 512 512">
+      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+      </svg>
+    </span>
+    <span class="magic-star">
+      <svg viewBox="0 0 512 512">
+      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+      </svg>
+    </span>
+    <span class="magic-star">
+      <svg viewBox="0 0 512 512">
+      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+      </svg>
+    </span>
+    <span class="magic-text">Saját Nexus</span>
+  </span><br></h5>
+                          <hr class="divider" />
+                          <div class="reveal">A minionok a nexusnál jelennek meg. A nexus mögött található a forrás, ahol gyorsan visszanyerheted az életerődet és a manádat, és hozzáférhetsz a bolt kínálatához.</p> </div>
+                           <div class="reveal"><img src="img/bluenexus.png" alt="BlueNexus" title="Saját Nexus" id="nexus" class="img-fluid"></div>
+                           <h5><span class="magic">
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-star">
+                              <svg viewBox="0 0 512 512">
+                              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                              </svg>
+                            </span>
+                            <span class="magic-text">Ellenséges Nexus</span>
+                          </span></h5>
+                            <hr class="divider" />
+                            <div class="reveal">Az ellenfél bázisában egy pontosan olyan nexus helyezkedik el, mint a tiéd. Az ellenséges nexust lerombolva nyerheted meg a játékot.</div>
+                        <div class="reveal"></p><img src="img/rednexus.png" alt="RedNexus" title="Ellenséges Nexus" id="nexusred" class="img-fluid" ></p></div>
+
+                          
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <h5><span class="magic" id="nevek">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+              </svg>
+            </span>
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+              </svg>
+            </span>
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+              </svg>
+            </span>
+            <span class="magic-text">&copy; A Weboldalt Készítették: Kálmán Rómeó, Németh Kristóf és Kondor Milán</span>
+          </span><br></h5>
+        </footer>
+    </header>
+
+    
+    <!-- anmiáció script -->
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+  
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for(var i = 0; i < reveals.length; i++){
+  
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+  
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+      </script>
+
+    <!-- Jobb Klikk Kikapcsolása -->
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+
+    
+<script defer src="app.js"></script>
+<script src="scripter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

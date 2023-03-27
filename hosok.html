@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hősök</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ikon.ico">
+    <script src="script.js" defer></script>
+</head>
+<body id="hatter">
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="nav-main">
+          <div class="nav-header">
+            <img src="img/ikon.ico" alt="logo">
+    
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="index.html">Főoldal</a>
+            </li>
+    
+            <li>
+              <a href="hosok.html">Hősök</a>
+    
+            </li>
+
+            <li>
+              <a href="vidik.html">Előzetes</a>
+            
+            </li>
+    
+            <li>
+              <a href="kapcsolat.html">Kapcsolat</a>
+    
+            </li>
+    
+            <li>
+              <a href="rendszerkov.html">Rendszerkövetelmények</a>
+            </li>
+  
+            <li id="szin">
+              <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            </li>
+    
+          </ul>
+        </div>
+      </nav>
+
+      <header class="hosok">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                  <h1 style="font-size: 100px;"><span class="magic" id="about">
+                    <span class="magic-star">
+                      <svg viewBox="0 0 512 512">
+                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                      </svg>
+                    </span>
+                    <span class="magic-star">
+                      <svg viewBox="0 0 512 512">
+                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                      </svg>
+                    </span>
+                    <span class="magic-star">
+                      <svg viewBox="0 0 512 512">
+                      <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                      </svg>
+                    </span>
+                    <span class="magic-text">Hősök</span>
+                  </span></h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5"></p>
+                    <a class="btn btn-primary btn-xl" id="hosgomb" href="#hos">Ismerd meg a hősöket!</a>
+                    <br><br>
+                    <a class="btn btn-primary btn-xl" id="hosgomb" href="#all">Összes Hős</a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <article id="hos">
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="card" style="width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Lillia_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Lillia</h5>
+                      <p class="card-text">Lillia, a félénk tündérgida ijedősen járja Ionia erdeit. A halandók tekintete elől rejtőzve, akiknek rejtélyes természete régóta vonzza, de egyben meg is rémíti őt, Lillia megpróbál rájönni, hogy az álmaik miért nem érik el többé az Álmodó Fát. Most Ioniában vándorol egy mágikus ággal a kezében az emberek be nem teljesült álmai után kutatva. Lillia csak ezután tud virágba borulni és segíteni másoknak legyőzni a félelmeiket, hogy megtalálhassák a fényt. Ííí!</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/lillia/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Aphelios_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Aphelios</h5>
+                      <p class="card-text">A holdvilág árnyékából támadásra kész fegyverekkel előbukkanó Aphelios a hitének ellenségeit kínos csendben teszi el láb alól. Magabiztos célzásán és a fegyvereinek elsütésén keresztül fejezi ki a szándékait. Ugyan a vérében áramló méreg némává tette, húga, Alune útmutatással látja el őt. A távoli templomszentélyéből holdkőből készült fegyvereket küld a kezébe. Amíg a hold fénye a tájra vetül, Aphelios sosem lesz egyedül.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/aphelios/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Seraphine_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Seraphine</h5>
+                      <p class="card-text">Seraphine Piltoverben született, zauni szülők gyermekeként, és hallja mások lelkét: a világ énekel neki, és ő a saját dalával válaszol. Fiatalkorában még menekülni próbált a hangok elől, de ma már ihletet merít belőle, és a hangzavarból szimfóniát teremt. Egyszerre lép fel a két testvérváros előtt, emlékeztetve az ott élőket, hogy nincsenek egyedül, hogy együtt erősebbek, és hogy ő végtelen lehetőségeket lát bennük.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/seraphine/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+            
+
+            <div class="row">
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Yone_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Yone</h5>
+                      <p class="card-text">Életében ő volt Yone: Yasuo féltestvére, a falu harcművészeti iskolájának kiemelkedő tanulója. De miután a saját fivére végzett vele, egy gonosz lény eredt a nyomába a szellemvilágban, amelyet végül annak saját kardjával győzött le. Yone sorsa az lett, hogy a teremtmény démoni maszkját viselve fáradhatatlanul vadásszon a hasonló teremtményekre, hogy megértse, mivé is vált valójában.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/yone/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Gnar_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Gnar</h5>
+                      <p class="card-text">Gnar egy őskori yordle, aki egyik pillanatban játékosan bohóckodik, a másikban pedig hatalmas, pusztító szörnyeteggé válik. Évezredekig elemi jég fogságában sínylődött, most pedig nagyokat szökdelve keresi az izgalmas és szép dolgokat a világban. Gnar imádja a veszélyt, és kész bármit ellenfelei felé hajítani, ami a keze ügyébe kerül... legyen az saját csontbumerángja vagy egy kisebb épület.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/gnar/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Jinx_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Jinx</h5>
+                      <p class="card-text">Jinx egy mániákus, lobbanékony zauni bűnöző, aki imád rombolni, és fittyet hány a következményekre. Halálos fegyverek sorát hordja magánál. A lehető leghangosabb lövések és a legfényesebb robbanások közepette kelt káoszt és pánikot. Jinx utál unatkozni, és amerre jár, a csak rá jellemző káoszt hagyja hátra.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/jinx/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Samira_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Samira</h5>
+                      <p class="card-text">Samira megingathatatlan magabiztossággal néz a halál szemébe, újabb és újabb izgalmakat keresve. Miután gyerekkorában lerombolták az otthonát Shurimában, Samira Noxusban lelt rá valódi hivatására, ahol vakmerő és stílusos zsoldosként veszélyes és kulcsfontosságú küldetéseket vállal el. A pisztolyokkal és egyedi tervezésű karddal felfegyverkezett Samira élvezi az élet-halál helyzeteket, és látványos eleganciával iktat ki mindenkit, aki az útjába áll.</p>
+                        <a href="https://www.leagueoflegends.com/hu-hu/champions/samira/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Annie_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Annie</h5>
+                      <p class="card-text">Annie egy veszélyes, ám lehengerlően érett gondolkodású gyermek, aki emellett elképesztő hatalmú tűzmágus is. Még a Noxustól északra elterülő hegyek árnyékában élők között is kivételesnek számít mágikus tehetsége. Nagyon korán megnyilvánult ereje, főként kiszámíthatatlan érzelmi kitörések alkalmával, de mára már magabiztosan uralja „játékos trükkjeit”. Ezek közül is a kedvence, amikor imádott plüssmackóját, Tibberst tüzes védelmezőként idézi meg. Annie örök gyermeki ártatlansággal járja a sötét erdőket, folyton új játszótárs után kutatva.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/annie/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Yasuo_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Yasuo</h5>
+                      <p class="card-text">Yasuo, ez a rendkívül elszánt és fürge ioniai kardfogató a puszta levegővel győzi le az ellenfeleit. Még büszke ifjúként tévesen a mestere meggyilkolásával vádolták meg. Mivel nem tudta bizonyítani az ártatlanságát, olyan helyzetbe került, hogy végül önvédelemből a saját testvérét is kénytelen volt megölni. Bár azóta már kiderült, hogy valójában ki ölte meg a mesterét, Yasuo nem tudott megbocsátani magának. Most a szülőföldjét járja, és pengéjét már csak a szél vezeti.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/yasuo/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Neeko_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Neeko</h5>
+                      <p class="card-text">Neeko egy rég elfeledett vastaya törzsből származik, aki mások kinézetét kölcsönvéve bárhol képes beolvadni a tömegbe. Ilyenkor megismeri a másik érzelmi állapotát is, így azonnal felismeri, hogy ki a barát, és ki az ellenség. Senki sem tudja, hogy Neeko merre jár – vagy hogy egyáltalán kicsoda –, de aki ártani akar neki, hamar megismerkedik a valódi énjével, ahogy ősi, pusztító lélekmágiát zúdít rá.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/neeko/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Darius_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Darius</h5>
+                      <p class="card-text">Semmi nem jelképezheti hűségesebben Noxus erejét, mint Darius, a nemzet legrettegettebb és legharcedzettebb parancsnoka. Szerény körülmények közé született, de mára ő lett Noxus keze, aki kegyetlenül lesújt Noxus ellenségeire... még ha maguk is noxusiak. Ő vezeti a trifariai légiót, és mindenki tudja, hogy Noxus rendíthetetlen híve. Aki ellen egyszer fegyvert ragad, az nem számíthat kegyelemre.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/darius/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Viktor_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Viktor</h5>
+                      <p class="card-text">A technológia új korának hírnöke, Viktor az emberiség továbbfejlesztésének szentelte életét. Örök idealista, aki Zaun népét új tudati szintre szeretné emelni. Mélyen hisz abban, hogy csak a dicsőséges technológiai evolúció révén aknázható ki az emberiségben rejlő lehetőségek tárháza. Acéllal és tudományos vívmányokkal megerősített testével felvértezve megszállottan dolgozik a fényes jövő megteremtésén.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/viktor/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Ekko_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Ekko</h5>
+                      <p class="card-text">Ekko, a Zaun sötét sikátoraiban nevelkedett csodagyerek az idő manipulálásával minden helyzetet a maga javára képes fordítani. Saját találmánya, a Zéró meghajtó segíti, hogy a lehetséges valóságok útvesztőjét bebarangolva megalkossa a tökéletes pillanatot. Bár lubickol ebben a szabadságban, ha a barátait fenyegeti veszély, bármit megtesz azért, hogy megvédje őket. A külső szemlélő azt láthatja, hogy Ekkónak a legképtelenebb feladat is mindig egyből sikerül.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/ekko/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Jayce_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Jayce</h5>
+                      <p class="card-text">Jayce egy briliáns felfedező, aki egész életét Piltover és a fejlődés eszméjének szentelte. Átalakulásra képes hextech kalapácsával a kézben, erejét, bátorságát és jelentős intelligenciáját bevetve védi szülővárosát. Bár a városban hősként imádják, rosszul viseli az ezzel járó figyelmet. De Jayce szíve a helyén van, és bár egyesek irigylik természetes tehetségét, mégis hálásak a fejlődés városának tett szolgálataiért.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/jayce/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Evelynn_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Evelynn</h5>
+                      <p class="card-text">Az Evelynn névre hallgató démon Runaterra legsötétebb zugaiban kutat következő áldozata után. Egy érzéki nő képében csábítja magához a prédáját, és ha az védtelenné válik, Evelynn felfedi valódi lényét. Az áldozatokat ezután leírhatatlan kínoknak veti alá, ő maga pedig élvezettel lubickol a fájdalmukban. A démon szemében ezek csak futó kalandok. Runaterra többi lakója számára azonban ezek a történetek elrettentő emlékeztetők arra, hogy a zabolátlan kéjvágynak milyen súlyos ára lehet.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/evelynn/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Caitlyn_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Caitlyn</h5>
+                      <p class="card-text">Caitlyn Piltover első számú békefenntartója, aki a legravaszabb bűnözőknek is a nyomára akad. Gyakran dolgozik együtt Vi-vel, nyugalmával kiegyensúlyozva társa heves természetét. Bár Caitlynt egy teljesen egyedi hextech puska is segíti, a legnagyobb fegyvere borotvaléles esze, amivel kifinomult csapdákat állít a törvényszegőknek, akik ostoba módon a Fejlődés városában űzik mesterségüket.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/caitlyn/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Katarina_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Katarina</h5>
+                      <p class="card-text">A határozott döntésekre kész és halálos Katarina a noxusi orgyilkosok legjobbikának számít. A legendás Du Couteau tábornok legidősebb lánya, aki számos gyanútlan ellenség gyors kiiktatásával hamar megmutatta tehetségét. Tüzes becsvágya a legjobban őrzött célpontok felé hajtja, akár saját szövetségeseinek veszélyeztetése árán is. Ám Katarina sosem habozik feladata végrehajtásában a fogazott élű tőrök forgatagában.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/katarina/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Poppy_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Poppy</h5>
+                      <p class="card-text">Runaterra világában se szeri, se száma a bátor hősöknek, de egyik sem olyan kitartó, mint Poppy. Ez az elszánt yordle harcos titokban „Demacia hősét” keresi évek óta, akinek átadhatja Orlon legendás pörölyét, a nála kétszer nagyobb fegyvert, amit mindenhová magával hordoz. Addig is kötelességtudóan küzd a királyságért, és elűzi annak ellenségeit.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/poppy/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Elise_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Elise</h5>
+                      <p class="card-text">Elise egy gyilkos ragadozó, aki egy világtól elzárt, sötét palotában él Noxus legrégebbi városának szívében. Egykor halandó volt, egy hatalmas nemesi ház úrnője, de egy gonosz félisten harapása egy gyönyörű, emberfeletti, pókszerű lénnyé változtatta, aki hálójába csalja mit sem sejtő áldozatait. Hogy megőrizze örök ifjúságát, Elise naiv, hitetlen emberekkel táplálkozik, és kevés halandó képes ellenállni a csábításának.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/elise/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+    
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Xayah_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Xayah</h5>
+                      <p class="card-text">A precíz és halálos Xayah egy vastaya forradalmár, aki személyes hadjáratot folytat népe megmentéséért. Fürgeségével, ravaszságával és borotvaéles tollpengéivel mindenkit eltesz láb alól, aki az útjába áll. Xayah társa és szerelme, Rakan oldalán harcol, hogy megvédje egyre fogyatkozó törzsét, és visszaállítsa fajuk régi dicsőségét.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/xayah/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                    <img src="weboldalhoz kepek LOL/Garen_0.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Garen</h5>
+                      <p class="card-text">Garen büszke harcos, a Rettenthetetlen Előőrs egyik tagja. Társai kedvelik, ellenfelei pedig tisztelik, nem kis részben azért, mert a Koronaőr család tagja, akik felesküdtek Demacia és eszményeinek védelmére. Garen varázs-ellenállású páncélzatával és pallosával felszerelkezve száll szembe a mágusokkal és varázslókkal a harcmezőn, valóságos pengeviharral sújtva le rájuk.</p>
+                      <a href="https://www.leagueoflegends.com/hu-hu/champions/garen/" target="_blank" class="btn gomb">Több információ</a>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="row">
+
+              <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                  <img src="weboldalhoz kepek LOL/RiotX_ChampionList_pyke.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Pyke</h5>
+                    <p class="card-text">A bilgewateri Dögkikötő hírhedt szigonyosát, Pyke-ot egy óriáshal bendőjében kellett volna elemésztenie a végzetének…ám ő mégis visszatért. Most egykori szülővárosa dohos sikátorait és görbe mellékutcáit járja, hogy új, természetfeletti képességeivel gyors és kegyetlen halált hozzon mindazokra, akik mások kárára harácsolják össze a vagyonukat – a szörnyvadászatról híres város tehát most rátalált a szörnyre, amely a lakóira vadászik.</p>
+                    <a href="https://www.leagueoflegends.com/hu-hu/champions/pyke/" target="_blank" class="btn gomb">Több információ</a>
+                  </div>
+                </div>
+  
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                  <img src="weboldalhoz kepek LOL/Sett_0.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Sett</h5>
+                    <p class="card-text">Sett az egyre gyarapodó ioniai alvilág vezetője, aki a Noxus ellen vívott háború után erősödött meg. Látszólag esélytelen harcosként kezdte karrierjét Navori arénáiban, de hamar hírhedtté tette állatias ereje, és hogy semmilyen sérülés sem állította meg. Miután legyőzte az összes helyi versenyzőt, Sett mára erőszakkal átvette az arénák irányítását, amelyekben egykor a vérét ontotta.</p>
+                    <a href="https://www.leagueoflegends.com/hu-hu/champions/sett/" target="_blank" class="btn gomb">Több információ</a>
+                  </div>
+                </div>
+
+                <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                  <img src="weboldalhoz kepek LOL/Ksante_0.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Ksante</h5>
+                    <p class="card-text">A dacos és bátor K'Sante óriási bestiák és a könyörtelen Felemelkedettek ellen harcolva védelmezi hazáját, Nazumah-t, a sokak által áhított oázist a shurimai sivatagban. A korábbi partnerével való szakítást követően K'Sante ráébredt, hogy nem rendelhet alá mindent a sikernek, ha a város vezetésére méltó harcossá akar válni. Csak így kerülheti el, hogy a büszkesége áldozatává váljon, és csak így válhat elég bölccsé ahhoz, hogy leszámolhasson a népét fenyegető szörnyekkel.</p>
+                    <a href="https://www.leagueoflegends.com/en-us/champions/k-sante/" target="_blank" class="btn gomb">Több információ</a>
+                  </div>
+                </div>
+
+          </div>
+          <div class="row">
+
+            <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                <img src="weboldalhoz kepek LOL/Hecarim_0.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Hecarim</h5>
+                  <p class="card-text">Hecarim ember és állat lidérces keveréke, aki arra kárhoztatott, hogy az örökkévalóságig a halandók lelkeire vadásszon. Egykor büszke lovag volt, és amikor az Áldott-szigetek árnyékba borult, a Romlás pusztító energiája megsemmisítette őt és lovas egységét a hátasaikkal együtt. Most, amikor a Fekete Köd próbálja elérni Runaterra távolabbi vidékeit, személyesen vezeti az élők elleni rohamot, élvezettel gyilkol és tapossa agyon ellenfeleit páncélozott patáival.</p>
+                  <a href="https://www.leagueoflegends.com/hu-hu/champions/hecarim/" target="_blank" class="btn gomb">Több információ</a>
+                </div>
+              </div>
+
+              <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+                <img src="weboldalhoz kepek LOL/Teemo_0.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Teemo</h5>
+                  <p class="card-text">Teemót semmilyen veszély vagy kihívás nem tántorítja el, határtalan lelkesedéssel és vidáman járja a világot. Olyan yordle ő, aki szilárdan ragaszkodik elveihez, és büszkén követi a Bandle-felderítők kódexét, amelyhez néha oly makacsul ragaszkodik, hogy észre sem veszi tetteinek messzemenő következményeit. Egyesek megkérdőjelezik a felderítők létjogosultságát, de Teemo elkötelezettsége megingathatatlan.</p>
+                  <a href="https://www.leagueoflegends.com/hu-hu/champions/teemo/" target="_blank" class="btn gomb">Több információ</a>
+                </div>
+              </div>
+
+              <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+                <img src="weboldalhoz kepek LOL/Viego_0.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Viego</h5>
+                  <p class="card-text">Viego, egy letűnt királyság egykori uralkodója, több mint ezer évvel ezelőtt lelte végzetét, amikor próbálkozása, hogy feleségét visszahozza a halálból, mágikus katasztrófát szabadított a világra, a Romlást. Viego, akit az évszázadok óta halott királynője iránti megszállott vágyakozás nagy erejű élőhalott lidérccé változtatott, most a letaszított királyként áll a halálos Lidércjárás élén, ahogy Runaterra minden szegletében kutatja a gyógyírt, mely egy nap visszahozhatja feleségét. Elpusztít mindent, ami az útjába kerül, miközben romlott, összetört szívéből a Fekete Köd gomolyog.</p>
+                  <a href="https://www.leagueoflegends.com/en-us/champions/viego/" target="_blank" class="btn gomb">Több információ</a>
+                </div>
+              </div>
+
+        </div>
+        <div class="row">
+
+          <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+              <img src="weboldalhoz kepek LOL/Ashe_0.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ashe</h5>
+                <p class="card-text">Ashe az avarosai törzs jégszülött vezetője, az ő irányítása alatt áll észak legnagyobb serege. Higgadt, intelligens, idealista és megbékélt vezetői szerepével. Vérvonala ősi mágiáját használva egy elemi jégből készült íjjal indul harcba. Népe úgy tartja, hogy ő a mitikus hős, Avarosa reinkarnációja, Ashe pedig szeretné ismét egyesíteni Freljordot, és visszaszerezni törzse összes korábbi területét.</p>
+                <a href="https://www.leagueoflegends.com/hu-hu/champions/ashe/" target="_blank" class="btn gomb">Több információ</a>
+              </div>
+            </div>
+
+            <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px;">
+              <img src="weboldalhoz kepek LOL/MissFortune_0.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Miss Fortune</h5>
+                <p class="card-text">Sarah Fortune egy szépségéről híres, ám kegyetlensége miatt rettegett bilgewateri kapitány, aki a kemény bűnözőkkel teli kikötővárosban is határozott figurának számít. Gyermekként végig kellett néznie, ahogy Gangplank, a kalózkirály megölte családját. Évekkel később véres bosszút állt ezért, amikor felrobbantotta a kalóz zászlóshajóját, miközben az a fedélzeten tartózkodott. Aki alábecsüli, egy csábító, kiszámíthatatlan ellenfelet szerez magának... és valószínűleg néhány pisztolygolyót a gyomrába.</p>
+                <a href="https://www.leagueoflegends.com/hu-hu/champions/miss-fortune/" target="_blank" class="btn gomb">Több információ</a>
+              </div>
+            </div>
+
+            <div class="card" style="max-width: 400px; margin-bottom: 100px; margin-top: 50px;">
+              <img src="weboldalhoz kepek LOL/Amumu_0.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Amumu</h5>
+                <p class="card-text">A legendák szerint Amumu egy magányos, szomorú lélek az ősi Shurimából, aki az egész világot bejárja, hogy barátra leljen. Egy nagy erejű átok sújtja, amely örök egyedüllétre kárhoztatja, mert a múmia érintése halált, a szeretete pusztulást hoz. Akik látni vélték, élő tetemként írják le Amumut: apró teste tekergőző pólyába van bugyolálva. Amumu rengeteg mítoszt, dalt és mesét ihletett, amelyeket annyiszor mondtak már el, majd adtak tovább, hogy szinte képtelenség elválasztani az igazságot a kitalációtól.</p>
+                <a href="https://www.leagueoflegends.com/hu-hu/champions/amumu/" target="_blank" class="btn gomb">Több információ</a>
+              </div>
+            </div>
+            
+            <!-- összes hős card -->
+            
+            <div class="card" style="max-width: 600px; margin-bottom: 100px; margin-right: 50px; margin-top: 50px; margin-left: 350px;" id="all">
+              <img src="img/all-champ.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">További Hősök</h5>
+                <p class="card-text"></p>
+                <a href="https://www.leagueoflegends.com/hu-hu/champions/" target="_blank" class="btn gomb" id="gombocska">Összes hős</a>
+              </div>
+            </div>
+
+        </article>
+
+        <!-- jobb Klikk Kikapcsolása -->
+        <script>
+          document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+</body>
+</html>

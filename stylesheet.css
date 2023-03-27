@@ -1,0 +1,252 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+body {
+background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+font-family: poppins, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 2.2;
+font-size: 0.999rem;
+background-color: rgb(50, 50, 50);
+}
+
+/*----Új Navbar:-----*/
+
+ul {
+    list-style-type: none;
+  }
+  
+  nav {
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 1px 4px white;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s linear;
+  }
+  
+  .menu a:hover {
+    background: rgb(161, 6, 26);
+    color: rgb(250, 250, 250);
+    padding-left: 1.5rem;
+  }
+  
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+  }
+  
+  footer {
+    font-size: small;
+    color: #fff;
+    text-align: center;
+    margin-top: 555px;
+  }
+  
+  footer:hover {
+    color: rgb(129, 129, 10);
+    cursor: pointer;
+  }
+  
+  @media (min-width: 800px) {
+    .nav-main {
+      max-width: 1170px;
+      margin: 0 auto;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .nav-bar {
+      padding: 0;
+    }
+  
+    .fa-bars {
+      display: none;
+    }
+  
+    .menu {
+      height: auto;
+      display: flex;
+    }
+  
+    .menu a {
+      padding: 0.5rem;
+      margin: 0 0.5rem;
+      letter-spacing: 2px;
+    }
+  
+    .menu a:hover {
+      text-decoration-color: darkgreen;
+    }
+  
+    footer {
+      display: block;
+      font-size: small;
+      color: #fff;
+    }
+  }
+  
+  
+  /*----Új Navbar Vége-----*/
+
+
+  :root {
+    --bg-color: rgb(20, 20, 20);
+    --card-color: rgb(23, 23, 23);
+  }
+
+  i{
+    font-size: 40px;
+    right: -0.5%;
+    bottom: -17px;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  #szin{
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+  }
+
+
+  section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section:nth-child(1){
+    color: #fff;
+  }
+  
+  section:nth-child(2){
+    color: #1D212B;
+    background: #fff;
+  }
+  
+  section:nth-child(3){
+    color: #fff;
+  }
+  
+  section:nth-child(4){
+    color: #1D212B;
+    background: #fff;
+  }
+  
+  section .container{
+    margin: 100px;
+  }
+  
+  section h1{
+    font-size: 60px;
+    color: black;
+  }
+  
+  section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  section h5{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  section h6{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  section h4{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff ;
+  }
+  
+  section .cards{
+    display: flex;
+  }
+  
+  section .cards .text-card{
+    background: #2696E9;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px){
+    section h1{
+      font-size: 40px;
+    }
+  
+    section .cards{
+      flex-direction: column;
+    }
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+        
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3850px;
+    height: 150px;
+  }
+  
+  #nevek:hover{
+    color: aqua;
+  }
