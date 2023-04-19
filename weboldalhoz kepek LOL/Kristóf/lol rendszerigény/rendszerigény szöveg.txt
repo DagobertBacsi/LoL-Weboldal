@@ -1,0 +1,183 @@
+Sziasztok! A 11.17-es frissítéstől kezdve megváltoznak a League of Legends és a Teamfight Tactics minimális és ajánlott rendszerkövetelményei. Ez kell a játékhoz a jövőben:
+
+PC
+Minimális konfiguráció
+
+Ajánlott konfiguráció
+
+PROCESSZOR
+
+Intel: Core i3-530
+
+AMD: A6-3650
+
+ARM:
+
+nem támogatott
+
+Intel: Core i5-3300
+
+AMD: Ryzen 3 1200
+
+ARM:
+
+nem támogatott
+
+PROCESSZORJELLEMZŐK
+
+SSE2
+
+SSE4
+
+VIDEOKÁRTYA (GPU)
+
+NVidia: GeForce 9600GT
+
+AMD: HD 6570
+
+Intel:
+
+Intel HD 4600 Integrated Graphics
+
+NVidia: GeForce 560
+
+AMD: Radeon HD 6950
+
+Intel:
+
+Intel UHD 630 Integrated Graphics
+
+VIDEOKÁRTYA-JELLEMZŐK
+
+DX10 szintű hardver
+
+DX11 szintű hardver
+
+VRAM
+
+1GB
+
+2GB
+
+Szabad lemezterület
+
+16GB HDD
+
+16GB SSD
+
+Operációs rendszer verziója
+
+Win 7, 8, 10
+
+Win 10
+
+Operációs rendszer architektúrája
+
+X86 32-bit, x64
+
+x64
+
+RAM
+
+2GB
+
+4GB
+
+Ajánlott grafikai beállítás
+
+Alacsony
+
+Magas
+
+Ajánlott felbontás
+
+1024x768
+
+1920x1080
+
+Mac
+Minimális konfiguráció
+
+Ajánlott konfiguráció
+
+PROCESSZOR
+
+Intel - Core i5-750
+
+ARM -
+
+Nem támogatott
+
+Intel - Core i5-3300
+
+ARM -
+
+Nem támogatott
+
+PROCESSZORJELLEMZŐK
+
+SSE2
+
+SSE3
+
+VIDEOKÁRTYA (GPU)
+
+AMD - HD 6570
+
+Intel:
+
+Intel HD 4600 Integrated Graphics
+
+AMD: Radeon HD 6950
+
+Intel:
+
+Intel UHD 630 Integrated Graphics
+
+VRAM
+
+1GB
+
+2GB
+
+Szabad lemezterület
+
+12GB HDD
+
+16GB SSD
+
+Operációs rendszer verziója
+
+MacOS 10.12
+
+MacOS 10.16
+
+Operációs rendszer architektúrája
+
+x64
+
+x64
+
+RAM
+
+2GB
+
+4GB
+
+Ajánlott grafikai beállítás
+
+Alacsony
+
+Magas
+
+Ajánlott felbontás
+
+1024x768
+
+1920x1080
+
+Miért döntött így a Riot?
+Nehéz szívvel bár, de meg kellett hoznunk a döntést: megszüntetjük az XP és a Vista támogatását. Sok új tartalmat adunk ki, ezért egyre több időt és energiát igényel részünkről a régi hardverekre való fejlesztés és tesztelés. Az így felszabaduló fejlesztők immár minden idejüket az új funkciók készítésének és a játékosi élmény fejlesztésének szentelhetik.
+
+Hogyan fog ez érinteni engem?
+Ha a jelenlegi hardvered meghaladja a minimális követelményeket, akkor semmi gond. Nincs további teendőd. Ha nem, akkor továbbra is fogsz tudni játszani a League of Legendsszel és a Teamfight Tacticsszel, de csak saját felelősségedre. A Mac-felhasználók esetében azonban az OSX 10.12 megléte szigorú minimális követelmény. Annál korábbi verziókkal nem lehet elindítani a LoL-klienst.

@@ -1,0 +1,3 @@
+A hősök két módon növelhetik erejüket: tapasztalati pontok gyűjtésével és szintlépéssel, illetve arany gyűjtésével, amivel erősebb tárgyakat vásárolhatnak. 
+Mindkettőt hatékonyan kell gyűjteni ahhoz, hogy végül legyűrhesd az ellenfelet, és lerombolhasd a bázisukat.
+

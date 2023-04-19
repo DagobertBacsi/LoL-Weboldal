@@ -1,0 +1,3 @@
+A csapatodnak legalább egy ösvényen át kell törnie, hogy elérje az ellenséges nexust. 
+Ehhez le kell rombolni a tornyokból és az inhibitorokból álló védelmi vonalat. 
+Mindegyik ösvényen három torony van és egy inhibitor, és a nexusokat két-két torony őrzi.

@@ -1,0 +1,9 @@
+SAJÁT NEXUS
+A minionok a nexusnál jelennek meg. A nexus mögött található a forrás, ahol gyorsan visszanyerheted az életerődet és a manádat, és hozzáférhetsz a bolt kínálatához.
+
+ELLENSÉGES NEXUS
+Az ellenfél bázisában egy pontosan olyan nexus helyezkedik el, mint a tiéd. Az ellenséges nexust lerombolva nyerheted meg a játékot.
+
+
+
+

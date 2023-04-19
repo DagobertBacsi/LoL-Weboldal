@@ -1,0 +1,1 @@
+Mindegyik inhibitort egy torony őrzi. Az inhibitorok elpusztítása után percekig szuperminionok fognak megjelenni az ösvényen. Ezután az inhibitor újjáépül, és nem érkeznek újabb szuperminionok.
